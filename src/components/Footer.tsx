@@ -14,7 +14,7 @@ export const Footer = () => {
               className="h-16 mb-4"
             />
             <p className="text-sm">
-              Building dreams into reality with innovation and excellence since 1998.
+              Building dreams into reality with innovation and excellence.
             </p>
           </div>
           
@@ -44,15 +44,17 @@ export const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-500" />
-                <span>123 Construction Avenue, Mumbai Central, Mumbai 400008</span>
+                <span> Vision Constructions<br />
+                        Trinity Junior College, Lane, Bhagatnagar, Mukarampura,<br />
+                        Karimnagar, Telangana 505481.</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-500" />
-                <span>+91 (22) 1234-5678</span>
+                <span>+91 9652467812</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-500" />
-                <span>info@visionconstructions.com</span>
+                <span>engineers.vision77@gmail.com</span>
               </li>
             </ul>
           </div>

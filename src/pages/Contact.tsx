@@ -25,9 +25,9 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Office Address</h3>
                       <p className="text-gray-600">
-                        123 Construction Avenue<br />
-                        Mumbai Central, Mumbai 400008<br />
-                        Maharashtra, India
+                        Vision Constructions<br />
+                        Trinity Junior College, Lane, Bhagatnagar, Mukarampura,<br />
+                        Karimnagar, Telangana 505481.
                       </p>
                     </div>
                   </div>
@@ -36,7 +36,7 @@ const ContactPage = () => {
                     <Phone className="w-6 h-6 text-blue-600" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-gray-600">+91 (22) 1234-5678</p>
+                      <p className="text-gray-600">+91 9652467812</p>
                     </div>
                   </div>
                   
@@ -44,7 +44,7 @@ const ContactPage = () => {
                     <Mail className="w-6 h-6 text-blue-600" />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600">info@visionconstructions.com</p>
+                      <p className="text-gray-600">engineers.vision77@gmail.com</p>
                     </div>
                   </div>
                   
@@ -53,7 +53,7 @@ const ContactPage = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Working Hours</h3>
                       <p className="text-gray-600">
-                        Monday - Saturday: 9:00 AM - 6:00 PM<br />
+                        Monday - Saturday: 9:00 AM - 8:00 PM<br />
                         Sunday: Closed
                       </p>
                     </div>
