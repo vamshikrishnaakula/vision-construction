@@ -1,19 +1,77 @@
 
+import { useEffect, useRef, useState } from "react";
+
 const stats = [
-  { number: "25+", label: "Years Experience" },
-  { number: "500+", label: "Projects Completed" },
-  { number: "1000+", label: "Happy Clients" },
-  { number: "2500+", label: "Employees" },
+  { number: 25, label: "Years Experience", suffix: "+" },
+  { number: 500, label: "Projects Completed", suffix: "+" },
+  { number: 1000, label: "Happy Clients", suffix: "+" },
+  { number: 2500, label: "Employees", suffix: "+" },
 ];
 
 export const Stats = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [counts, setCounts] = useState(stats.map(() => 0));
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      stats.forEach((stat, index) => {
+        const duration = 2000; // Animation duration in milliseconds
+        const steps = 60; // Number of steps in the animation
+        const increment = stat.number / steps;
+        let current = 0;
+        let step = 0;
+
+        const interval = setInterval(() => {
+          if (step < steps) {
+            current += increment;
+            setCounts((prev) =>
+              prev.map((count, i) =>
+                i === index ? Math.min(Math.round(current), stat.number) : count
+              )
+            );
+            step++;
+          } else {
+            clearInterval(interval);
+          }
+        }, duration / steps);
+
+        return () => clearInterval(interval);
+      });
+    }
+  }, [isVisible]);
+
   return (
-    <section className="py-20 bg-blue-600 text-white">
+    <section ref={sectionRef} className="py-20 bg-blue-600 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat) => (
+          {stats.map((stat, index) => (
             <div key={stat.label} className="text-center">
-              <div className="text-4xl font-bold mb-2">{stat.number}</div>
+              <div className="text-4xl font-bold mb-2">
+                {counts[index]}
+                {stat.suffix}
+              </div>
               <div className="text-gray-200">{stat.label}</div>
             </div>
           ))}
