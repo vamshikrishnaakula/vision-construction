@@ -1,19 +1,35 @@
 
 const projects = [
   {
-    title: "Luxury Apartment Complex",
-    location: "Mumbai, India",
-    image: "https://images.unsplash.com/photo-1486718448742-163732cd1544",
+    title: "2BHK Independent House",
+    location: "Karimnagar, India",
+    category: "Residential",
+    image: "myworks/Proj_independent_1.jpeg",
+    description:
+      "A 2 BHK Independent House with modern amenities and sustainable design.",
   },
   {
-    title: "Corporate Office Tower",
-    location: "Bangalore, India",
-    image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833",
+    title: "3BHK Independent House",
+    location: "Karimnagar, India",
+    category: "Residential",
+    image: "myworks/Proj_2_independent_2.jpeg",
+    description:
+      "Luxury 3 BHK Independent House with modern amenities and sustainable design..",
   },
   {
-    title: "Shopping Mall",
-    location: "Delhi, India",
-    image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e",
+    title: "Duplex  Bedroom Hall Kitchen",
+    location: "Karimnagar, India",
+    category: "Residential",
+    image: "myworks/Proj_4_independent.jpeg",
+    description:
+      "Modern Duplex with 4 Bedroom Hall Kitchen and Spacious Living Area",
+  },
+  {
+    title: "Plan for 3BHK Independent House",
+    location: "Hyderabad, India",
+    category: "",
+    image: "myworks/proj_5_independent.jpeg",
+    description: "Independent infrastructure and amenities.",
   },
 ];
 
@@ -25,7 +41,7 @@ export const Projects = () => {
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
           Discover our landmark projects across India
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div key={project.title} className="group relative overflow-hidden rounded-lg">
               <img

@@ -23,7 +23,7 @@ export const Hero = () => {
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               View Our Projects
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button size="lg" variant="outline" href="#" className="bg-blue-600 hover:bg-blue-200">
               Learn More
             </Button>
           </div>

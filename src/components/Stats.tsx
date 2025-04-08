@@ -2,10 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { number: 25, label: "Years Experience", suffix: "+" },
-  { number: 500, label: "Projects Completed", suffix: "+" },
-  { number: 1000, label: "Happy Clients", suffix: "+" },
-  { number: 2500, label: "Employees", suffix: "+" },
+  { number: 5, label: "Years Experience", suffix: "+" },
+  { number: 55, label: "Projects Completed", suffix: "+" },
+  { number: 100, label: "Happy Clients", suffix: "+" },
+  { number: 25, label: "Employees", suffix: "+" },
 ];
 
 export const Stats = () => {

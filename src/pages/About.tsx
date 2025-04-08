@@ -36,7 +36,7 @@ const AboutPage = () => {
               <div>
                 <h1 className="text-4xl font-bold mb-6">About Vision Constructions</h1>
                 <p className="text-gray-600 mb-4">
-                  Founded in 1998, Vision Constructions has established itself as one of India's leading construction companies. 
+                  Founded in 2019, Vision Constructions has established itself as one of India's leading construction companies. 
                   With over two decades of experience, we've successfully delivered numerous landmark projects across the country.
                 </p>
                 <p className="text-gray-600">

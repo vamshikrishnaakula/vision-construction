@@ -7,19 +7,19 @@ import { Briefcase } from "lucide-react";
 const positions = [
   {
     title: "Senior Project Manager",
-    location: "Mumbai, India",
+    location: "Hyderabad, India",
     type: "Full-time",
     experience: "8+ years",
   },
   {
     title: "Civil Engineer",
-    location: "Delhi, India",
+    location: "Hyderabad, India",
     type: "Full-time",
     experience: "3-5 years",
   },
   {
     title: "Architecture Designer",
-    location: "Bangalore, India",
+    location: "Karimnagar, India",
     type: "Full-time",
     experience: "4-6 years",
   },
